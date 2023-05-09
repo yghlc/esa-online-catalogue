@@ -9,6 +9,6 @@ python to_sqlite.py
 # move to  ~/.local/share/asarapi
 db_dir=~/.local/share/asarapi
 mkdir -p ${db_dir}
-mv catalog.db  ${db_dir}
+mv data/catalog.db  ${db_dir}
 
 
