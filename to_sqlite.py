@@ -50,7 +50,7 @@ conn.execute('SELECT load_extension("mod_spatialite");')
 conn.execute('SELECT InitSpatialMetadata(1);')
 conn.commit()
 c = conn.cursor()
-c.execute("CREATE TABLE products(id CHARACTER(59) PRIMARY KEY, date INTEGER, platform TEXT, swath TEXT, orbit TEXT, url TEXT, polarisation TEXT)")
+c.execute("CREATE TABLE products(id CHARACTER(59) PRIMARY KEY, date INTEGER, platform TEXT, swath TEXT, path INTEGER, frame INTEGER, orbit TEXT, url TEXT, polarisation TEXT)")
 c.execute("SELECT AddGeometryColumn('products', 'geom', 4326, 'POLYGON', 'XY');")
 conn.commit()
 
