@@ -18,6 +18,8 @@ COLUMNS = [
     'platformShortName',
     'swathIdentifier',
     'orbitDirection',
+    'wrsLongitudeGrid',
+    'wrsLatitudeGrid',
     'footprint',
     'productURI',
     'polarisationChannels',
